@@ -77,6 +77,18 @@ NAVBAR
 
     cursor:pointer;
 
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+}
+
+.menu-toggle:focus{
+
+    outline:none;
+
 }
 
 /* ===========================
@@ -94,8 +106,15 @@ RESPONSIVE
         max-width:70%;
     }
 
+    .navbar{
+        align-items:center;
+    }
+
     .menu-toggle{
-        display:block;
+        display:flex;
+        margin-left:auto;
+        position:relative;
+        z-index:1001;
     }
 
     .menu{
@@ -104,7 +123,7 @@ RESPONSIVE
 
         position:absolute;
 
-        top:70px;
+        top:calc(100% + 8px);
         left:0;
 
         width:100%;
@@ -115,9 +134,9 @@ RESPONSIVE
 
         align-items:center;
 
-        gap:22px;
+        gap:18px;
 
-        padding:25px 0;
+        padding:20px 0;
 
         box-shadow:0 10px 20px rgba(0,0,0,.08);
 

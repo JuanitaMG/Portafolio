@@ -103,7 +103,7 @@
     /* NAVBAR */
 
     .navbar{
-        flex-direction:column;
+        flex-direction:row;
         gap:15px;
         padding:15px 20px;
     }
