@@ -11,15 +11,13 @@ if (menuToggle && menu) {
     };
 
     const toggleMenu = (e) => {
-        // prevent focus/ghost clicks on touch devices
-        if (e) e.preventDefault && e.preventDefault();
         menu.classList.toggle("active");
         updateToggle();
     };
 
+    // Attach pointer and click handlers for broad device support
     menuToggle.addEventListener("click", toggleMenu);
-    menuToggle.addEventListener("pointerup", toggleMenu);
-    menuToggle.addEventListener("touchstart", toggleMenu, {passive: false});
+    menuToggle.addEventListener("pointerdown", toggleMenu);
 
     document.querySelectorAll(".menu a").forEach(link => {
         link.addEventListener("click", () => {
