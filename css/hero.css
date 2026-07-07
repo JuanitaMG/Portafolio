@@ -1,0 +1,90 @@
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 140px 8% 80px;
+}
+
+/* ===========================
+   TEXTO
+=========================== */
+
+.hero-text {
+    flex: 1;
+}
+
+.saludo {
+    font-size: 24px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    color: #0f172a;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #334155;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    max-width: 650px;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 1.8;
+    color: #64748b;
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ===========================
+   FOTO
+=========================== */
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 460px;
+    height: 460px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.25);
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 55px rgba(37, 99, 235, 0.35);
+}

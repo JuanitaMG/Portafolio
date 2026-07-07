@@ -1,0 +1,82 @@
+/* ===========================
+   TECNOLOGÍAS
+=========================== */
+
+.skills {
+    padding: 120px 8%;
+    background: #f8fafc;
+}
+
+/* ===========================
+   SUBTÍTULO
+=========================== */
+
+.skills-subtitle {
+    max-width: 700px;
+    margin: 20px auto 60px;
+
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* ===========================
+   TARJETAS
+=========================== */
+
+.skill-card {
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
+}
+
+/* ===========================
+   ICONOS
+=========================== */
+
+.skill-card i {
+    margin-bottom: 20px;
+
+    font-size: 60px;
+    color: #2563eb;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.skill-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #0f172a;
+}
