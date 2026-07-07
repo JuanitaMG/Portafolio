@@ -5,9 +5,9 @@ if (menuToggle && menu) {
     const updateToggle = () => {
         const isOpen = menu.classList.contains("active");
         menuToggle.setAttribute("aria-expanded", String(isOpen));
-        menuToggle.innerHTML = isOpen
-            ? '<i class="fas fa-times"></i>'
-            : '<i class="fas fa-bars"></i>';
+            menuToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
     };
 
     menuToggle.addEventListener("click", () => {
