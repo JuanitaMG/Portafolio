@@ -10,10 +10,16 @@ if (menuToggle && menu) {
                 : '<i class="fa-solid fa-bars"></i>';
     };
 
-    menuToggle.addEventListener("click", () => {
+    const toggleMenu = (e) => {
+        // prevent focus/ghost clicks on touch devices
+        if (e) e.preventDefault && e.preventDefault();
         menu.classList.toggle("active");
         updateToggle();
-    });
+    };
+
+    menuToggle.addEventListener("click", toggleMenu);
+    menuToggle.addEventListener("pointerup", toggleMenu);
+    menuToggle.addEventListener("touchstart", toggleMenu, {passive: false});
 
     document.querySelectorAll(".menu a").forEach(link => {
         link.addEventListener("click", () => {
