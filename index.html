@@ -35,22 +35,31 @@
 
         <nav class="navbar">
 
-            <div class="logo">
-                Portafolio
+            <div class="brand">
+
+                <div class="logo" data-i18n="brandName">
+                    Portafolio
+                </div>
+
+                <div class="language-switcher" id="language-switcher">
+                    <button type="button" class="lang-btn active" data-lang="es">ES</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                </div>
+
             </div>
 
             <!-- Botón hamburguesa -->
-            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" data-i18n="menuToggleLabel" data-i18n-attr="aria-label">
                 <i class="fas fa-bars"></i>
             </button>
 
             <ul class="menu" id="menu">
 
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#tecnologias">Tecnologías</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="navInicio">Inicio</a></li>
+                <li><a href="#sobre-mi" data-i18n="navSobreMi">Sobre mí</a></li>
+                <li><a href="#tecnologias" data-i18n="navTecnologias">Tecnologías</a></li>
+                <li><a href="#proyectos" data-i18n="navProyectos">Proyectos</a></li>
+                <li><a href="#contacto" data-i18n="navContacto">Contacto</a></li>
 
             </ul>
 
@@ -64,7 +73,7 @@
 
         <div class="hero-text">
 
-            <p class="saludo">
+            <p class="saludo" data-i18n="heroGreeting">
                 ¡Hola!, soy
             </p>
 
@@ -72,11 +81,11 @@
                 Juanita Martínez Gutiérrez
             </h1>
 
-            <h2>
+            <h2 data-i18n="heroSubtitle">
                 Estudiante de Ingeniería Informática
             </h2>
 
-            <p class="descripcion">
+            <p class="descripcion" data-i18n="heroDescription">
                 Actualmente curso noveno semestre de Ingeniería Informática. Me apasiona el desarrollo de software y la creación de aplicaciones web, enfocándome en desarrollar soluciones funcionales mediante tecnologías modernas, buenas prácticas de programación y aprendizaje continuo.
             </p>
 
@@ -87,7 +96,7 @@
                     class="btn github">
 
                     <i class="fa-brands fa-github"></i>
-                    GitHub
+                    <span data-i18n="heroBtnGithub">GitHub</span>
 
                 </a>
 
@@ -96,7 +105,7 @@
                     class="btn linkedin">
 
                     <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
+                    <span data-i18n="heroBtnLinkedin">LinkedIn</span>
 
                 </a>
 
@@ -106,7 +115,7 @@
                     class="btn cv">
 
                     <i class="fa-solid fa-file-arrow-down"></i>
-                    Descargar CV
+                    <span data-i18n="heroBtnCv">Descargar CV</span>
 
                 </a>
 
@@ -126,7 +135,7 @@
 
 <section id="sobre-mi" class="about">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-i18n="aboutTitle">
         Sobre mí
     </h2>
 
@@ -134,15 +143,15 @@
 
         <div class="about-text">
 
-            <p>
+            <p data-i18n="aboutP1">
                 Soy estudiante de Ingeniería Informática de noveno semestre, apasionada por el desarrollo de software y el aprendizaje continuo. Busco fortalecer constantemente mis conocimientos y contribuir al desarrollo de soluciones tecnológicas que generen valor.
             </p>
 
-            <p>
+            <p data-i18n="aboutP2">
                 Durante mi formación académica he desarrollado proyectos web, aplicaciones móviles y videojuegos educativos, tanto de manera individual como en equipo. Estas experiencias me han permitido fortalecer habilidades técnicas, de análisis y trabajo colaborativo.
             </p>
 
-            <p>
+            <p data-i18n="aboutP3">
                 Me caracterizo por ser una persona responsable, comprometida, con facilidad para adaptarme a nuevos entornos y con una actitud proactiva frente a los retos. Disfruto aprender nuevas tecnologías y seguir creciendo tanto a nivel profesional como personal.
             </p>
 
@@ -154,11 +163,11 @@
 
                 <i class="fa-solid fa-graduation-cap"></i>
 
-                <h3>Educación</h3>
+                <h3 data-i18n="cardEducationTitle">Educación</h3>
 
-                <p>Ingeniería Informática</p>
+                <p data-i18n="cardEducationText">Ingeniería Informática</p>
 
-                <span>9.º semestre</span>
+                <span data-i18n="cardEducationNote">9.º semestre</span>
 
             </div>
 
@@ -166,11 +175,11 @@
 
                 <i class="fa-solid fa-laptop-code"></i>
 
-                <h3>Enfoque</h3>
+                <h3 data-i18n="cardFocusTitle">Enfoque</h3>
 
-                <p>Desarrollo Web</p>
+                <p data-i18n="cardFocusText">Desarrollo Web</p>
 
-                <span>Full Stack</span>
+                <span data-i18n="cardFocusNote">Full Stack</span>
 
             </div>
 
@@ -178,11 +187,11 @@
 
                 <i class="fa-solid fa-brain"></i>
 
-                <h3>Intereses</h3>
+                <h3 data-i18n="cardInterestsTitle">Intereses</h3>
 
-                <p>Inteligencia Artificial</p>
+                <p data-i18n="cardInterestsText">Inteligencia Artificial</p>
 
-                <span>Desarrollo Web • Aprendizaje continuo</span>
+                <span data-i18n="cardInterestsNote">Desarrollo Web • Aprendizaje continuo</span>
 
             </div>
 
@@ -190,11 +199,11 @@
 
                 <i class="fa-solid fa-briefcase"></i>
 
-                <h3>Actualmente</h3>
+                <h3 data-i18n="cardNowTitle">Actualmente</h3>
 
-                <p>Disponible</p>
+                <p data-i18n="cardNowText">Disponible</p>
 
-                <span>Prácticas profesionales y oportunidades laborales</span>
+                <span data-i18n="cardNowNote">Prácticas profesionales y oportunidades laborales</span>
 
             </div>
 
@@ -208,11 +217,11 @@
 
 <section id="tecnologias" class="skills">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-i18n="skillsTitle">
         Tecnologías
     </h2>
 
-    <p class="skills-subtitle">
+    <p class="skills-subtitle" data-i18n="skillsSubtitle">
         Tecnologías y herramientas que he utilizado durante mi formación académica y en el desarrollo de proyectos personales y universitarios.
     </p>
 
@@ -310,11 +319,11 @@
 
 <section id="proyectos" class="projects">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-i18n="projectsTitle">
         Mis proyectos
     </h2>
 
-    <p class="projects-subtitle">
+    <p class="projects-subtitle" data-i18n="projectsSubtitle">
         Estos son algunos de los proyectos que he desarrollado durante mi formación universitaria, aplicando diferentes tecnologías y fortaleciendo mis habilidades en el desarrollo de software.
     </p>
 
@@ -324,13 +333,13 @@
 
         <article class="project-card">
 
-            <img src="assets/images/ProyectoReservas.png" alt="Sistema de Reserva de Salas">
+            <img src="assets/images/ProyectoReservas.png" alt="Sistema de Reserva de Salas" data-i18n="project1ImageAlt" data-i18n-attr="alt">
 
             <div class="project-content">
 
-                <h3>Sistema de Reserva de Salas</h3>
+                <h3 data-i18n="project1Title">Sistema de Reserva de Salas</h3>
 
-                <p>
+                <p data-i18n="project1Description">
                     Sistema web desarrollado para optimizar la gestión y reserva de salas mediante una plataforma moderna e intuitiva. Permite administrar usuarios, espacios, disponibilidad y solicitudes de reserva. Fue desarrollado con Laravel, Vue.js, Inertia.js, PostgreSQL y Tailwind CSS siguiendo buenas prácticas de desarrollo.
                 </p>
 
@@ -347,7 +356,7 @@
                     class="project-btn">
 
                     <i class="fa-brands fa-github"></i>
-                    Ver repositorio
+                    <span data-i18n="projectRepoBtn">Ver repositorio</span>
 
                 </a>
 
@@ -359,13 +368,13 @@
 
         <article class="project-card">
 
-            <img src="assets/images/ferreteria.png" alt="Sistema de Ferretería">
+            <img src="assets/images/ferreteria.png" alt="Sistema de Ferretería" data-i18n="project2ImageAlt" data-i18n-attr="alt">
 
             <div class="project-content">
 
-                <h3>Sistema de Ferretería</h3>
+                <h3 data-i18n="project2Title">Sistema de Ferretería</h3>
 
-                <p>
+                <p data-i18n="project2Description">
                     Sistema web desarrollado en equipo para gestionar productos, inventario, clientes y usuarios de una ferretería. Participé en el desarrollo de funcionalidades, base de datos e interfaz utilizando ASP.NET MVC, C#, SQL Server y Bootstrap.
                 </p>
 
@@ -381,7 +390,7 @@
                     class="project-btn">
 
                     <i class="fa-brands fa-github"></i>
-                    Ver repositorio
+                    <span data-i18n="projectRepoBtn">Ver repositorio</span>
 
                 </a>
 
@@ -393,13 +402,13 @@
 
         <article class="project-card">
 
-            <img src="assets/images/Unity.png" alt="Proyecto Unity">
+            <img src="assets/images/Unity.png" alt="Proyecto Unity" data-i18n="project3ImageAlt" data-i18n-attr="alt">
 
             <div class="project-content">
 
-                <h3>Videojuego en Unity</h3>
+                <h3 data-i18n="project3Title">Videojuego en Unity</h3>
 
-                <p>
+                <p data-i18n="project3Description">
                     Videojuego desarrollado en Unity utilizando C#. Se implementaron mecánicas de juego, físicas, animaciones, control del jugador y programación orientada a objetos, fortaleciendo habilidades en el desarrollo de videojuegos.
                 </p>
 
@@ -414,7 +423,7 @@
                     class="project-btn">
 
                     <i class="fa-brands fa-github"></i>
-                    Ver repositorio
+                    <span data-i18n="projectRepoBtn">Ver repositorio</span>
 
                 </a>
 
@@ -426,13 +435,13 @@
 
         <article class="project-card">
 
-            <img src="assets/images/Construct.png" alt="Proyecto Construct">
+            <img src="assets/images/Construct.png" alt="Proyecto Construct" data-i18n="project4ImageAlt" data-i18n-attr="alt">
 
             <div class="project-content">
 
-                <h3>Videojuego en Construct 2</h3>
+                <h3 data-i18n="project4Title">Videojuego en Construct 2</h3>
 
-                <p>
+                <p data-i18n="project4Description">
                     Videojuego 2D desarrollado en Construct 2 como proyecto académico. Se implementaron eventos, animaciones, colisiones y mecánicas interactivas, fortaleciendo conocimientos en diseño y desarrollo de videojuegos.
                 </p>
 
@@ -446,7 +455,7 @@
                     class="project-btn">
 
                     <i class="fa-brands fa-github"></i>
-                    Ver repositorio
+                    <span data-i18n="projectRepoBtn">Ver repositorio</span>
 
                 </a>
 
@@ -461,11 +470,11 @@
 
 <section id="contacto" class="contact">
 
-    <h2 class="section-title">
+    <h2 class="section-title" data-i18n="contactTitle">
         Contáctame
     </h2>
 
-    <p class="contact-subtitle">
+    <p class="contact-subtitle" data-i18n="contactSubtitle">
         Estoy disponible para prácticas profesionales y oportunidades laborales. Si deseas conocer más sobre mi perfil o mis proyectos, no dudes en ponerte en contacto conmigo.
     </p>
 
@@ -476,7 +485,7 @@
 
             <i class="fas fa-envelope"></i>
 
-            <h3>Correo</h3>
+            <h3 data-i18n="contactEmailTitle">Correo</h3>
 
             <p>
                 juanitamartinezgutierrez9@gmail.com
@@ -489,7 +498,7 @@
 
             <i class="fas fa-phone"></i>
 
-            <h3>Teléfono</h3>
+            <h3 data-i18n="contactPhoneTitle">Teléfono</h3>
 
             <p>
                 +57 322 861 6382
@@ -504,7 +513,7 @@
 
             <i class="fab fa-linkedin"></i>
 
-            <h3>LinkedIn</h3>
+            <h3 data-i18n="contactLinkedinTitle">LinkedIn</h3>
 
             <p>
                 Juanita Martínez Gutiérrez
@@ -519,7 +528,7 @@
 
             <i class="fab fa-github"></i>
 
-            <h3>GitHub</h3>
+            <h3 data-i18n="contactGithubTitle">GitHub</h3>
 
             <p>
                 github.com/JuanitaMG
@@ -533,9 +542,7 @@
 
         <i class="fas fa-location-dot"></i>
 
-        <span>
-            Manizales, Colombia
-        </span>
+        <span data-i18n="contactLocation">Manizales, Colombia</span>
 
     </div>
 
